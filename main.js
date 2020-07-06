@@ -44,9 +44,19 @@ return count
 }
 
 const deleteMiddleLetters = function (str){
-let newString=''
-  if(str.length % 2){}
+let newString= ''
 
+for(let i=0;i<str.length;i++)
+  if(str[i] !== str.length / 2 && str.length % 2 ===0  ){
+
+    newString += str[i]
+  }
+
+
+  else if(str.length % 2 !==0 && str[i] !== Math.floor(str.length/2)&& str[i]!== Math.floor(str.length)+ 1){
+
+    newString += str[i]
+  }
 
   else{}
 
